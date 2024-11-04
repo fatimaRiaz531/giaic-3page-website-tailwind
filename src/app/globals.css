@@ -58,9 +58,23 @@
 }
 
 /* global.css */
-html,
+
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure full height */
+}
+
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  padding-top: 64px; /* Adjust according to your header height */
+}
+
+.container {
+  min-height: calc(100vh - 64px); /* Ensure content takes full height minus header */
+}
+.hidden {
+  display: none; /* This will hide any element with the class 'hidden' */
+}
+.text-container {
+  margin-top: 0;
 }
